@@ -23,8 +23,30 @@ class Calculator {
         return total;
     }
     
+    public func add(lhs: (Int, Int), rhs: (Int, Int)) -> (Int, Int) {
+        return ((lhs.0 + rhs.0), (lhs.1 + rhs.1))
+    }
+    
+    public func add(lhs: [String: Int], rhs: [String: Int]) -> [String: Int] {
+        var result = ["x": 0, "y": 0];
+        result["x"] = lhs["x"]! + rhs["x"]!;
+        result["y"] = lhs["y"]! + rhs["y"]!;
+        return result;
+    }
+    
     public func subtract(lhs: Int, rhs: Int) -> Int {
         return lhs - rhs;
+    }
+    
+    public func subtract(lhs: (Int, Int), rhs: (Int, Int)) -> (Int, Int) {
+        return ((lhs.0 - rhs.0), (lhs.1 - rhs.1))
+    }
+    
+    public func subtract(lhs: [String: Int], rhs: [String: Int]) -> [String: Int] {
+        var result = ["x": 0, "y": 0];
+        result["x"] = lhs["x"]! - rhs["x"]!;
+        result["y"] = lhs["y"]! - rhs["y"]!;
+        return result;
     }
     
     public func multiply(lhs: Int, rhs: Int) -> Int {
