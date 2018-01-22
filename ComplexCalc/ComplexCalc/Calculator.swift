@@ -34,6 +34,18 @@ class Calculator {
         return result;
     }
     
+    public func mathOp(lhs: Int, rhs: Int, op: (Int, Int) -> Int) -> Int {
+        return op(lhs, rhs)
+    }
+    
+    public func mathOp(args:[Int], beg: Int, op: (Int, Int) -> Int) -> Int {
+        var total = beg;
+        for num in args {
+            total = op(total, num)
+        }
+        return total;
+    }
+    
     public func subtract(lhs: Int, rhs: Int) -> Int {
         return lhs - rhs;
     }
