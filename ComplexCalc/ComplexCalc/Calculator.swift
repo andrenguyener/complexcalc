@@ -15,6 +15,14 @@ class Calculator {
         return lhs + rhs;
     }
     
+    public func add(_ numbers:[Int]) -> Int {
+        var total = 0;
+        for num in numbers {
+            total += num
+        }
+        return total;
+    }
+    
     public func subtract(lhs: Int, rhs: Int) -> Int {
         return lhs - rhs;
     }
@@ -23,7 +31,27 @@ class Calculator {
         return lhs * rhs;
     }
     
+    public func multiply(_ numbers:[Int]) -> Int {
+        var total = 1;
+        for num in numbers {
+            total *= num
+        }
+        return total;
+    }
+    
     public func divide(lhs: Int, rhs: Int) -> Int {
         return lhs / rhs;
+    }
+    
+    public func count(_ numbers:[Int]) -> Int {
+        return numbers.count;
+    }
+    
+    public func avg(_ numbers:[Int]) -> Int {
+        var total = 0
+        for number in numbers {
+            total += Int(number)
+        }
+        return total / (numbers.count)
     }
 }
