@@ -83,5 +83,4 @@ what to name a function or its parameters, check the test code to see how it is 
 **NOTE:** Do not modify the tests listed in the section with the comment "Do not modify code in this
 section." Changing the tests to make your code work is not good form, and is frowned upon by the
 other developers. All of the tests can pass--you need to figure out the Swift syntax to declare the
-functions properly in the Calculator class so that the code can compile and work as intended.
-
+functions properly in the Calculator class so that the code can compile and work as intended
